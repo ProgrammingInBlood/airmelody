@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/CalmTunes2.png" type="image/x-icon">
+    <title>Air Melody</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+
+</head>
+
+
+
+<body>
+
+    <header id="header">
+        <!--  Brand Logo  -->
+        <a class="nav-brand" href="" target="_blank">
+            <img id="header-img" src="./img/CalmTunes2.png" alt="Pixel Skincare">
+        </a>
+
+        <!--  Toggle Menu for Mobile  -->
+
+        <input type="checkbox" id="toggle-menu" role="button">
+        <label for="toggle-menu" class="toggle-menu">Menu</label>
+
+        <!--  Menus  -->
+        <nav id="nav-bar" class="navbar">
+            <ul class="menu" id="menu">
+                <li><a class="nav-link" href="#featured">Features</a></li>
+                <li><a class="nav-link" href="#collections">Contributors</a></li>
+                <li><a class="nav-link" href="#about">About</a></li>
+                <li><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+            <ul class="social-menu">
+                <li><a href="https://in.pinterest.com/eklavyasingh12065"><i class="fab fa-pinterest"></i></a></li>
+                <li><a href="https://www.youtube.com/programminginblood"><i class="fab fa-youtube" aria-hidden="true"></i></a></li>
+                <li><a href="https://twitter.com/coder_eklavya"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                <li><a href="https://instagram.com/mr.eklavya"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <div class="hero-img">
+        </div>
+        <div class="hero-text">
+            <h1>The Correct Tune</br>Will Chill You Down!</h1>
+            <a href="./webapp.html" class="btn">Launch Web player</a>
+        </div>
+    </div>
+
+    <!-- Featured Section -->
+    <section id="featured">
+        <div class="title title-left">
+            <span class="line"></span>
+            <h3>Features</h3>
+        </div>
+        <div class="wrapper">
+            <div class="image">
+                <img src="./img/lappy.png" alt="lappy">
+            </div>
+            <div class="text">
+                <h2>It's free. No credit card required!</h2>
+                <p>
+                    <br><br> - Discover and listen to your favourite podcasts
+                    <br><br> - Make and share your own playlists
+                    <br> <br> - Choose your preferred languages for music
+                    <br> <br> - Find music for any mood, genre, or activity
+                    <br> <br> - Listen to your favourite songs on mobile, tablet and desktop</p>
+                <a href="#about" class=btn>More Details</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Collection Section -->
+    <section id="collections">
+        <div class="title title-right">
+            <span class="line line-right"></span>
+            <h3>Contributors</h3>
+        </div>
+        <div class="wrapper">
+            <a class="box box1" href="https://eklavyasingh.me">
+                <h4>Eklavya Singh</h4>
+                <div class="box-overlay"></div>
+            </a>
+            <a class="box box2" href="https://www.instagram.com/dhanuprys/">
+                <h4>Gede Dhanu Purnayasa</h4>
+                <div class="box-overlay"></div>
+            </a>
+            <a class="box box3" href="./webapp.html">
+                <h4>Air Melody</h4>
+                <div class="box-overlay"></div>
+            </a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="title title-left">
+            <span class="line"></span>
+            <h3>Air Melody</h3>
+        </div>
+        <div class="wrapper">
+            <div class="text">
+                <p>Air Melody provides an excellent music experience</p>
+                <p>The Mazor Feature, Which stands out Air Melody from other players, is an Ads-free experience</p>
+                <p>We Provide Premium Music Features at zero costs </p>
+            </div>
+            <div class="image">
+                <img id="abouts" src="./img/about.png" alt="about">
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <div class="loading-wrapper" id="loading-wrapper">
+        <img src="./img/loading.gif" alt="loading" id="loading-content">
+    </div>
+
+    <div class="screen" id="contact">
+        <div class="screen-body">
+            <div class="screen-body-item left">
+                <div class="app-title">
+                    <span>CONTACT</span>
+                    <span>US</span>
+                </div>
+                <div class="app-contact"></div>
+            </div>
+            <form action="https://formspree.io/f/xrgrbnny" method="POST" id="my-form">
+                <div class="screen-body-item">
+
+
+                    <div class="app-form">
+                        <div class="app-form-group">
+                            <input class="app-form-control" placeholder="NAME">
+                        </div>
+                        <div class="app-form-group">
+                            <input type="email" name="client email" class="app-form-control" placeholder="EMAIL">
+                        </div>
+                        <div class="app-form-group">
+                            <input name="Conatct Number" class="app-form-control" placeholder="CONTACT NO">
+                        </div>
+                        <div class="app-form-group message">
+                            <input name="message" class="app-form-control" placeholder="MESSAGE">
+                        </div>
+                        <div class="app-form-group buttons">
+
+                            <button type="submit" class="app-form-button">SEND</button>
+                        </div>
+
+
+
+                        <p id="my-form-status" style="color: white;"></p>
+            </form>
+            </div>
+            </div>
+        </div>
+    </div>
+    <div class="wrapper" id="wrapper">
+        <ul class="social-menu" id="social">
+            <li><a href="https://in.pinterest.com/eklavyasingh12065"><i class="fab fa-pinterest"></i></a></li>
+            <li><a href="https://www.youtube.com/programminginblood"><i class="fab fa-youtube" aria-hidden="true"></i></a></li>
+            <li><a href="https://twitter.com/coder_eklavya"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+            <li><a href="https://instagram.com/mr.eklavya"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+        </ul>
+
+    </div>
+    <div class="credits">
+        Copyright © 2021 all rights reserved By <a href="https://programminginblood.github.io/airtune/">  Air Melody</a>
+        </a>
+    </div>
+
+
+
+
+
+    <script>
+        document.onreadystatechange = function() {
+            if (document.readyState !== "complete") {
+                document.querySelector("body").style.visibility = "hidden";
+                document.querySelector("#loading-wrapper").style.visibility = "visible";
+            } else {
+                document.querySelector("#loading-wrapper").style.display = "none";
+                document.querySelector("body").style.visibility = "visible";
+            }
+        };
+    </script>
+    <script src="./js/index.js"></script>
+
+</body>
+
+</html>

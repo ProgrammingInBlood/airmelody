@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Air Melody- WebPlayer</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="./img/CalmTunes2.png" type="image/x-icon">
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+</head>
+
+<body>
+    <div class="device" id="side-menu">
+        <!-- SIDE BAR -->
+        <div id="base-container" class="container">
+            <!-- HEADER -->
+            <header>
+                <div class="logo">
+                    <img src="./img/CalmTunes2.png" alt="logo">
+                </div>
+
+            </header>
+
+            <!-- MAIN AREA -->
+
+            <div id="active-search" style="display: none">
+                <div id="search">
+                    <input id="search-input" type="text" placeholder="Search Artists, Songs or Podcasts." />
+                    <button id="search-button"><i class="fa fa-search"></i></button>
+                    <div class="spinner"><i class="fa fa-spinner"></i></div>
+                </div>
+                <!-- WHATSAPP -->
+                <div class="note">Play millions of songs and podcasts, for free.</div>
+            </div>
+
+            <div class="notes">This Feature is Coming Soon !</div>
+            <div class="collection-strip" id="result-list">
+                <div class="title-strip" id="results">
+                </div>
+                <div class="inner-strip" id="youtube-list">
+
+                </div>
+            </div>
+
+            <div id="lists">
+                <div class="collection-strip">
+                    <div class="title-strip">
+                        <h3>Popular playlists</h3>
+
+                    </div>
+                    <div class="inner-strip" id="pre-list">
+                        <div class="box-item" data-videoid="kE3YkD0vXlc">
+                            <div class="box-item__image"><img src="https://i.ytimg.com/vi/kE3YkD0vXlc/hqdefault.jpg"></div>
+                            <h4>Innovura Entertainment</h4>
+                            <p>PAANI KI TARAH | HARJAS</p>
+                        </div>
+                        <div class="box-item" data-videoid="BEhS9fO0QXg">
+                            <div class="box-item__image"><img src="https://i.ytimg.com/vi/BEhS9fO0QXg/hqdefault.jpg"></div>
+                            <h4>MC STΔN</h4>
+                            <p>MC STΔN - KAHAN PAR</p>
+                        </div>
+                        <div class="box-item" data-videoid="I6Etemcdkgc">
+                            <div class="box-item__image"><img src="https://i.ytimg.com/vi/I6Etemcdkgc/hqdefault.jpg"></div>
+                            <h4>Emiway Bantai</h4>
+                            <p>EMIWAY - SHY (PROD. MEME</p>
+                        </div>
+                        <div class="box-item" data-videoid="o907r6NsK9s">
+                            <div class="box-item__image"><img src="https://i.ytimg.com/vi/o907r6NsK9s/hqdefault.jpg"></div>
+                            <h4>KRSNA</h4>
+                            <p>SAZA-E-MAUT Ft. RAFTAAR -</p>
+                        </div>
+                        <div class="box-item" data-videoid="VNs_cCtdbPc">
+                            <div class="box-item__image"><img src="https://i.ytimg.com/vi/VNs_cCtdbPc/hqdefault.jpg"></div>
+                            <h4>RUN-UP RECORDS</h4>
+                            <p>BROWN MUNDE - AP DHILLON</p>
+                        </div>
+                        <div class="box-item" data-videoid="IeDw-R2jdWc">
+                            <div class="box-item__image"><img src="https://i.ytimg.com/vi/IeDw-R2jdWc/hqdefault.jpg"></div>
+                            <h4>AarPaar Music</h4>
+                            <p>One Life Baby | Sahil</p>
+                        </div>
+                        <div class="box-item" data-videoid="Hw3NH_-_ja8">
+                            <div class="box-item__image"><img src="https://i.ytimg.com/vi/Hw3NH_-_ja8/hqdefault.jpg"></div>
+                            <h4>Yo Yo Honey Singh</h4>
+                            <p>Jingle Bell | Hommie Dilliwala</p>
+                        </div>
+                        <div class="box-item" data-videoid="yz95mLpz5Bs">
+                            <div class="box-item__image"><img src="https://i.ytimg.com/vi/yz95mLpz5Bs/hqdefault.jpg"></div>
+                            <h4>Sony Music India</h4>
+                            <p>Badshah - Fly | Shehnaaz</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="collection-strip">
+                    <div class="title-strip">
+                        <h3>Best Hollywood</h3>
+                    </div>
+                    <div class="inner-strip">
+                        <div class="box-item" data-videoid="Fof9lHaApXc">
+                            <div class="box-item__image"><img src="https://i.ytimg.com/vi/Fof9lHaApXc/hqdefault.jpg"></div>
+                            <h4>Nostalgic Jams</h4>
+                            <p>Jaden Smith - Fallen (Official</p>
+                        </div>
+                        <div class="box-item" data-videoid="-iNWEwLfkv8">
+                            <div class="box-item__image"><img src="https://i.ytimg.com/vi/-iNWEwLfkv8/hqdefault.jpg"></div>
+                            <h4>DJKhaledVEVO</h4>
+                            <p>DJ Khaled ft. Drake -</p>
+                        </div>
+                        <div class="box-item" data-videoid="7aS7KStPgNA">
+                            <div class="box-item__image"><img src="https://i.ytimg.com/vi/7aS7KStPgNA/hqdefault.jpg"></div>
+                            <h4>PoloGVEVO</h4>
+                            <p>Polo G - Flex (Official</p>
+                        </div>
+                        <div class="box-item" data-videoid="JlUo_6unRfE">
+                            <div class="box-item__image"><img src="https://i.ytimg.com/vi/JlUo_6unRfE/hqdefault.jpg"></div>
+                            <h4>RAPSTAR</h4>
+                            <p>Juice WRLD - Juice WRLD</p>
+                        </div>
+                        <div class="box-item" data-videoid="HIwAI05Y1fU">
+                            <div class="box-item__image"><img src="https://i.ytimg.com/vi/HIwAI05Y1fU/hqdefault.jpg"></div>
+                            <h4>Jack Harlow</h4>
+                            <p>Jack Harlow - WHATS POPPIN</p>
+                        </div>
+                        <div class="box-item" data-videoid="0EVVKs6DQLo">
+                            <div class="box-item__image"><img src="https://i.ytimg.com/vi/0EVVKs6DQLo/hqdefault.jpg"></div>
+                            <h4>dojacatVEVO</h4>
+                            <p>Doja Cat - Kiss Me</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="collection-strip">
+                    <div class="title-strip">
+                        <h3>Trending now</h3>
+                    </div>
+                    <div class="inner-strip">
+                        <div class="box-item" data-videoid="m-el0pQLQE4">
+                            <div class="box-item__image"><img src="https://i.ytimg.com/vi/m-el0pQLQE4/hqdefault.jpg"></div>
+                            <h4>Rauf &amp; Faik</h4>
+                            <p>Rauf &amp;amp; Faik - детство</p>
+                        </div>
+                        <div class="box-item" data-videoid="7ljPnIczN4A">
+                            <div class="box-item__image"><img src="https://i.ytimg.com/vi/7ljPnIczN4A/hqdefault.jpg"></div>
+                            <h4>Anshit S Kaushik</h4>
+                            <p>Childhood (Hindi Version) - Anshit</p>
+                        </div>
+                        <div class="box-item" data-videoid="Hcp2llRFU0g">
+                            <div class="box-item__image"><img src="https://i.ytimg.com/vi/Hcp2llRFU0g/hqdefault.jpg"></div>
+                            <h4>Kalamkaar</h4>
+                            <p>TOOTA DIL (FULL VIDEO) |</p>
+                        </div>
+                        <div class="box-item" data-videoid="eUjkLr6gnNE">
+                            <div class="box-item__image"><img src="https://i.ytimg.com/vi/eUjkLr6gnNE/hqdefault.jpg"></div>
+                            <h4>HipHop Vibe</h4>
+                            <p>Doobta Raha(Lyrics) - Harjas ||</p>
+                        </div>
+                        <div class="box-item" data-videoid="n7GAGN98yn4">
+                            <div class="box-item__image"><img src="https://i.ytimg.com/vi/n7GAGN98yn4/hqdefault.jpg"></div>
+                            <h4>Kalamkaar</h4>
+                            <p>HUTT HUTT | BALI |</p>
+                        </div>
+                        <div class="box-item" data-videoid="Vx7YkKpt-J4">
+                            <div class="box-item__image"><img src="https://i.ytimg.com/vi/Vx7YkKpt-J4/hqdefault.jpg"></div>
+                            <h4>Darks Music Company</h4>
+                            <p>Vilen - Chidiya (Official </p>
+                        </div>
+                        <div class="box-item" data-videoid="giAk9fuMn4c">
+                            <div class="box-item__image"><img src="https://i.ytimg.com/vi/giAk9fuMn4c/hqdefault.jpg"></div>
+                            <h4>Speed Records</h4>
+                            <p>Sniper | Muzical Doctorz Sukhe</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="player" style="display: none;"></div>
+        <!-- SONG CONTROL STRIP -->
+    </div>
+
+
+    <div class="song-control">
+        <div class="song-control__inner">
+            <div class="song-control__buttons">
+                <i class="fas fa-random"></i>
+                <i class="fas fa-backward" id="backward"></i>
+                <div id="button">
+                    <i class="fas fa-play" id="play"></i>
+                    <i class="fas fa-pause" id="pause"></i>
+                </div>
+                <i class="fas fa-forward" id="forward"></i>
+                <i class="fas fa-redo-alt"></i>
+            </div>
+            <div class="song-control__timeline" id="duration">
+                <span id="current-duration">0:00</span>
+                <div class="timeline">
+                    <div class="timeline-fill" id="songduration"></div>
+                </div>
+                <span id="total-duration">0:00</span>
+
+            </div>
+            <div class="bottom-nav">
+
+                <input type="radio" name="radio" value="1" id="tab-1" checked/>
+                <label class="icon home" for="tab-1">
+            <ion-icon name="home-outline"></ion-icon>
+            <ion-icon class="fill" name="home"></ion-icon>
+          </label>
+
+                <input type="radio" name="radio" value="2" id="tab-2" />
+                <label class="icon search" for="tab-2">
+                    <ion-icon name="search-outline"></ion-icon>
+            <ion-icon class="fill" name="search"></ion-icon>
+          </label>
+
+                <input type="radio" name="radio" value="3" id="tab-3" />
+                <label class="icon fav" for="tab-3">
+            <ion-icon name="heart-outline"></ion-icon>
+            <ion-icon class="fill" name="heart"></ion-icon>
+          </label>
+
+                <input type="radio" name="radio" value="4" id="tab-4" />
+                <label class="icon profile" for="tab-4">
+            <ion-icon name="person-outline"></ion-icon>
+            <ion-icon class="fill" name="person"></ion-icon>
+          </label>
+
+            </div>
+        </div>
+
+    </div>
+    <div class="containers">
+
+    </div>
+
+    <div class="loading-wrapper" id="loading-wrapper">
+        <img src="./img/loading.gif" alt="loading" id="loading-content">
+    </div>
+
+    <!-- -----------------SCRIPTS----------------------->
+
+    <script>
+        document.onreadystatechange = function() {
+            if (document.readyState !== "complete") {
+                document.querySelector("body").style.visibility = "hidden";
+                document.querySelector("#loading-wrapper").style.visibility = "visible";
+            } else {
+                document.querySelector("#loading-wrapper").style.display = "none";
+                document.querySelector("body").style.visibility = "visible";
+            }
+        };
+    </script>
+    <script src="./js/jquery.js"></script>
+    <script src="./js/main.js"></script>
+
+    <script src="./js/api.js"></script>
+
+
+</body>
+
+</html>
